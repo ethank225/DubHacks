@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const backBtn = document.getElementById('back-btn');
   if (backBtn) {
     backBtn.addEventListener('click', function() {
-      window.location.href = 'intro.html'; // Adjust the path if necessary
+      window.location.href = 'index.html'; // Adjust the path if necessary
     });
   }
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const gobackintroBtn = document.getElementById('go-back-intro-btn');
   if (gobackintroBtn) {
     gobackintroBtn.addEventListener('click', function() {
-      window.location.href = 'intro.html'; // Adjust the path if necessary
+      window.location.href = 'index.html'; // Adjust the path if necessary
     });
   }
 
