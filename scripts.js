@@ -105,7 +105,7 @@ function handleSubmit() {
 // Function to handle the back button click
 function handleBack() {
   // Navigate back to the intro page
-  window.location.href = 'index.html'; // Change 'intro.html' to your actual intro page
+  window.location.href = 'intro.html'; // Change 'intro.html' to your actual intro page
 }
 
 // Function to display family data on the home page

@@ -7,6 +7,10 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background: linear-gradient(to left, #add8e6, #ffffff); /* Light blue to white gradient */
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
 }
 
 /* Profile Container */

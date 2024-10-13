@@ -5,6 +5,9 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background: linear-gradient(to left, #add8e6, #ffffff); /* Light blue to white gradient */
+  background-size: cover;
+  background-repeat: no-repeat;
   font-family: Arial, sans-serif;
 }
 
@@ -37,7 +40,7 @@ button {
 .feed-container {
   width: 60%;
   margin: 20px auto;
-  flex-grow: 1; /* This will ensure the content stretches and allows the footer to stay at the bottom */
+  flex-grow: 1;
 }
 
 .feed-post {
@@ -106,16 +109,6 @@ button {
   font-weight: bold;
   font-size: 30px;
   font-family: 'Arial', sans-serif; /* Modern font */
-  background-color: #ecf0f1; /* Light gray background */
-  border: 2px solid #3498db; /* Blue border */
-  border-radius: 10px; /* Rounded corners */
-  padding: 15px; /* Spacing inside the box */
-  text-align: center; /* Center the text */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: background-color 0.3s; /* Smooth transition for hover effect */
-  width: 100%; /* Full width */
-  box-sizing: border-box; /* Include padding and border in the element's total width */
-  position: relative; /* Ensure it remains in the normal flow */
 }
 
 .feed-post:hover {
@@ -126,6 +119,31 @@ button {
   margin-bottom: 20px; /* Adjust this value as needed */
 }
 
+
+
 button {
   margin-right: 10px; /* Adds space between buttons */
+}
+
+.container-box {
+  width: 420px;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  border: 2px solid rgba(255, 255, 255, .2);
+  backdrop-filter: blur(20px); /* Creating a blurred effect */
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  color: #fff;
+  border-radius: 20px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#family-info > p{
+  font-size: 40px;
+  text-align: center;
 }
