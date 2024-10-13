@@ -1,0 +1,131 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  width: 200px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.feed-container {
+  width: 60%;
+  margin: 20px auto;
+  flex-grow: 1; /* This will ensure the content stretches and allows the footer to stay at the bottom */
+}
+
+.feed-post {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+}
+
+.feed-post h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+}
+
+.feed-post p {
+  margin: 0;
+}
+
+.feed-post time {
+  display: block;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Bottom navigation bar */
+.bottom-nav {
+  background-color: #1a1b73;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out; /* Transition for smooth hover effects */
+}
+
+.bottom-nav:hover {
+  padding: 15px 0; /* Increase padding to make it 'grow' */
+  background-color: #3498db; /* Slightly lighter background on hover */
+}
+
+.bottom-nav .nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out; /* Smooth transitions for individual items */
+  transform: translateY(0); /* Initial transform state */
+}
+
+.bottom-nav .nav-item:hover {
+  text-decoration: underline;
+  transform: scale(1.2); /* Makes the text grow slightly on hover */
+  color: #FFD700; /* Change text color on hover */
+}
+
+.bottom-nav .nav-item:active {
+  transform: scale(1.1); /* Add a small 'press' effect on click */
+}
+
+#family-info {
+  color: #2c3e50; /* Darker blue color */
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Arial', sans-serif; /* Modern font */
+  background-color: #ecf0f1; /* Light gray background */
+  border: 2px solid #3498db; /* Blue border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Spacing inside the box */
+  text-align: center; /* Center the text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  width: 100%; /* Full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width */
+  position: relative; /* Ensure it remains in the normal flow */
+}
+
+.feed-post:hover {
+  background-color: #bdc3c7; /* Change background on hover */
+}
+
+.input-container, .button-container, .login-container {
+  margin-bottom: 20px; /* Adjust this value as needed */
+}
+
+button {
+  margin-right: 10px; /* Adds space between buttons */
+}
