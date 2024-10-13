@@ -29,6 +29,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  const gobackagainBtn = document.getElementById('submit-new-fam-back-btn');
+  if (gobackagainBtn) {
+    gobackagainBtn.addEventListener('click', function() {
+      window.location.href = 'index.html'; // Adjust the path if necessary
+    });
+  }
+
 
 });
 
